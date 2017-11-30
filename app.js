@@ -26,8 +26,6 @@ app.post('/hello', function(req, res, next) {
 
     if (userName !== 'slackbot') {
       return res.status(200).json(botPayload);
-    } else if (userName === 'davetayls') {
-      //send aggro messages
     } else if (userName === 'rhymes') {
       return res.status(200).json(rhymesPayload);
     }else {
